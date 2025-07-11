@@ -1,0 +1,11 @@
+akira.pagina-oficial.ws
+
+IP Compartilhado
+179.188.12.232
+
+Endereço SSL compartilhado
+https://akirapagina-ofic1.websiteseguro.com
+
+Host:ftp.akira.pagina-oficial.ws
+usuário: akirapagina-ofic1
+senha: frontendSEN@C2025
