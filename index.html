@@ -7,11 +7,17 @@
     <title>Akira</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- CSS -AOS Animation  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    <!--CSS Personalizado -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- CSS Lightbox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-xtV3HfYNbQXS/1R1jP53KbFcU9WXiSA1RFKzl5hRlJgdOJm4OxHCWYpskm6lN0xp0XtKGpAfVShpbvlFH3MDAA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body> 
     <!-- barra de navegaçao -->
-    <nav class="navbar navbar-expand-lg bg-dark py-3 py-0" data-bs-theme="dark">
+    <nav data-aos="fade-down" class="navbar navbar-expand-lg bg-dark py-3 py-0 fixed-top" data-bs-theme="dark">
         <div class=" container-lg container-fluid">
           <a class="navbar-brand bg-white py-0 px-2" href="#">
             <img src="./img/logotipo-akira.png" height="50" alt="Logotipo Akira">
@@ -32,8 +38,8 @@
                   Redes Sociais
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Facebook</a></li>
-                  <li><a class="dropdown-item" href="#">Instagram</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="https://www.facebook.com/akira2019/?locale=pt_BR">Facebook</a></li>
+                  <li><a class="dropdown-item" target="_blank" href="https://www.instagram.com/akira.toriyama/">Instagram</a></li>
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" target="_blank" href="https://www.youtube.com/watch?v=-tv2o4lWP6c">Youtube</a></li>
                 </ul>
@@ -50,7 +56,7 @@
         </div>
       </nav>
       <!-- Carousel -->
-      <div id="carouselExampleIndicators" class="carousel slide">
+      <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -58,28 +64,103 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="./img/carousel/akira-moto.jpg" class="d-block w-100" alt="Akira na moto">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="./img/carousel/akira-cidade.jpg" class="d-block w-100" alt="Akira na cidade">
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="./img/carousel/akira-estadio.jpg" class="d-block w-100" alt="Akira no estadio">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Imagem anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Próxima imagem</span>
         </button>
       </div>
+      <!-- Cards -->
+      <div class="container my-5">
+        <div class="g-4 row row-cols-lg-4 row-cols-sm-2 row-cols-1">
+          <div class="col">
+            <div class="card shadow h-100" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="card-body">
+                <h3>Lançamento 1988</h3>
+                <p>Akira, criado por Katsuhiro Otomo, começou como mangá em 1982, mas foi eternizado em 1988 com o lançamento da animação revolucionária. A história se passa em Neo-Tokyo, um Japão futurista e pós-apocalíptico, marcado por violência urbana, conspirações governamentais e poderes psíquicos. A animação marcou o mundo com seu visual detalhado e adulto, influenciando gerações.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="card-body">
+                <h3>Estilo Visual Inovador</h3>
+                <p>O estilo visual de Akira redefiniu os padrões da animação e dos quadrinhos. Katsuhiro Otomo criou uma Neo-Tokyo hiperrealista, com cenários urbanos complexos, expressões faciais marcantes e ação fluida. Cada quadro parece uma obra de arte, refletindo a decadência e o caos de um mundo à beira do colapso.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="card-body">
+                <h3>Temas Profundos e Atuais</h3>
+                <p>Mais que ficção científica, Akira é uma crítica social. O mangá explora temas como o autoritarismo, a desilusão juvenil, experimentos científicos antiéticos e o renascimento espiritual. É uma reflexão poderosa sobre o que acontece quando a humanidade brinca de deus em um mundo sem controle.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow h-100" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+              <div class="card-body">
+                <h3>Legado e Influência Global</h3>
+                <p>O impacto de Akira atravessou décadas. Inspirou filmes, séries, jogos e artistas ao redor do mundo. É considerado um dos marcos do cyberpunk e da animação adulta. Seu legado ainda ecoa na estética futurista, nos questionamentos éticos e no amor pela distopia tecnológica.</p>
+              </div>
+            </div>
+          </div>
+              
 
+        </div>
+
+      </div>
+      
+      <!-- História -->
+      <section class="container-fluid bg-body-tertiary py-5">
+        <div class="conteiner">
+          <h2 class="text-center mb-lg-4">
+            <strong>História</strong>
+          </h2>
+          <div class="card">
+            <div class="row">
+              <div class="col-lg-6 col-8 mx-auto">
+                <a href="./img/historia.jpg" data-lightbox="historia" data-title="Akira">
+                <img src="./img/historia.jpg" class="img-fluid rounded-lg-start preto-branco" alt="">
+              </a>
+              </div>
+                
+              <div class="col-lg-6 col-12 p-3 text-center">
+                <h6><p>Akira – O Mangá que Revolucionou a Ficção Científica
+
+                  Lançado entre 1982 e 1990, Akira é um dos mangás mais influentes de todos os tempos. <br>Criado por Katsuhiro Otomo, a obra se passa em Neo-Tóquio, uma metrópole futurista construída após uma explosão devastadora que deu início à Terceira Guerra Mundial. <br>O enredo acompanha Kaneda e Tetsuo, dois jovens envolvidos com gangues de motoqueiros, conspirações militares e poderes psíquicos que ameaçam destruir o mundo novamente.
+                  
+                  <br>Mais do que um marco da ficção científica cyberpunk, Akira é uma crítica profunda à política, ao autoritarismo e à fragilidade da condição humana. <br>Com arte detalhada, ritmo cinematográfico e uma atmosfera distópica única, o mangá abriu as portas para o reconhecimento global das histórias em quadrinhos japonesas.</p></h6>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- JS do JQuery  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
+        <!-- JS -AOS Animation  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+      AOS.init();
+    </script>
+    <!-- JS do Lihthbox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox.min.js" integrity="sha512-KbRFbjA5bwNan6DvPl1ODUolvTTZ/vckssnFhka5cG80JVa5zSlRPCr055xSgU/q6oMIGhZWLhcbgIC0fyw3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </body>
 

@@ -1,0 +1,11 @@
+#carouselExampleIndicators {
+    margin-top: 79px;
+}
+.preto-branco{
+    filter: grayscale(100%);
+    cursor: pointer;;
+}
+.preto-branco:hover {
+    filter: grayscale(0%);
+    transition: filter 0.5s ease;
+}
